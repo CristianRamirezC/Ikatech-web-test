@@ -15,10 +15,10 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link ms-4" href="#">DIRECTORIO DE TIENDAS</a>
-              <a class="nav-link" href="#">SERVICIO AL CLIENTE</a>
-              <a class="nav-link" href="#">MI CUENTA</a>
-              <a class="nav-link" href="#">Carrito: {{carrito}} </a>
+              <a class="nav-link" href="#" style="font-weight: 500">DIRECTORIO DE TIENDAS</a>
+              <a class="nav-link" href="#" style="font-weight: 500">SERVICIO AL CLIENTE</a>
+              <a class="nav-link" href="#" style="font-weight: 500">MI CUENTA</a>
+              <a class="nav-link" href="#" style="font-weight: 500">CARRITO: {{carrito}} </a>
             </div>
           </div>
         </div>

@@ -3,12 +3,12 @@
         <div class="row">
             <div class="col">
                 <h5> <span>HUSHPUPPIESCO/CALZADO/</span>{{zapatoMostrar.nombre}}</h5>
-                <img src="@/assets/2.jpg" class="card-img-top img-fluid" />
+                <img :src="zapatoMostrar.foto" class="card-img-top img-fluid" />
             </div>
             <div class="col"> 
-                <h1> {{zapatoMostrar.nombre}} </h1>
-                <h2> <span>$</span>{{zapatoMostrar.precio}} </h2>
-                <h3> <span>Codigo de producto: </span> {{zapatoMostrar.referencia}} </h3>
+                <h2> {{zapatoMostrar.nombre}} </h2>
+                <h3> <span>$</span>{{zapatoMostrar.precio}} </h3>
+                <h5> <span>Codigo de producto: </span> {{zapatoMostrar.referencia}} </h5>
                 <div class="mt-5 text-center">
                     <button class="btn btn-info" @click="aumentarCarrito"> Agregar al carrito</button>
                 </div>

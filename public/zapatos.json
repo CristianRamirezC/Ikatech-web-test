@@ -1,43 +1,43 @@
 [{
     "nombre": "Zapato azul",
-    "precio": 5000,
-    "referencia": "G40",
-    "foto": "1.jpg",
+    "precio": 6000,
+    "referencia": "G60",
+    "foto": "https://picsum.photos/id/0/600",
     "detalles": "Un Zapato azul",
-    "tecnologia" : "Un Zapato azul tecnologico"
+    "tecnologia" : "Un Zapato AZUL tecnologico"
 }, {
     "nombre": "Zapato rojo",
     "precio": 5000,
-    "referencia": "G40",
-    "foto": "2.jpg",
+    "referencia": "G50",
+    "foto": "https://picsum.photos/id/10/600",
     "detalles": " Un zapato rojo ",
-    "tecnologia" : "Un Zapato rojo tecnologico"
+    "tecnologia" : "Un Zapato ROJO tecnologico"
 }, {
     "nombre": "Zapato verde",
-    "precio": 5000,
+    "precio": 4000,
     "referencia": "G40",
-    "foto": "3.jpg",
+    "foto": "https://picsum.photos/id/20/600",
     "detalles": " Un zapato verde ",
-    "tecnologia" : "Un Zapato verde tecnologico"
+    "tecnologia" : "Un Zapato VERDE tecnologico"
 }, {
     "nombre": "Zapato gris",
-    "precio": 5000,
-    "referencia": "G40",
-    "foto": "4.jpg",
+    "precio": 3000,
+    "referencia": "G30",
+    "foto": "https://picsum.photos/id/30/600",
     "detalles": " Un zapato gris ",
-    "tecnologia" : "Un Zapato gris tecnologico"
+    "tecnologia" : "Un Zapato GRIS tecnologico"
 }, {
     "nombre": "Zapato cafe",
-    "precio": 5000,
-    "referencia": "G40",
-    "foto": "5.jpg",
+    "precio": 2000,
+    "referencia": "G20",
+    "foto": "https://picsum.photos/id/40/600",
     "detalles": " Un zapato cafe ", 
-    "tecnologia" : "Un Zapato cafe tecnologico"
+    "tecnologia" : "Un Zapato CAFE tecnologico"
 }, {
     "nombre": "Zapato miel",
-    "precio": 5000,
-    "referencia": "G40",
-    "foto": "6.jpg",
+    "precio": 1000,
+    "referencia": "G10",
+    "foto": "https://picsum.photos/id/50/600",
     "detalles": " Un zapato miel ",
-    "tecnologia" : "Un Zapato miel tecnologico"
+    "tecnologia" : "Un Zapato MIEL tecnologico"
 }]

@@ -2,8 +2,15 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    zapatos: [],
-    zapatoMostrar: {},
+    zapatos : [],
+    zapatoMostrar : {
+      nombre : "Zapato rojo",
+      precio : 5000,
+      referencia : "G40",
+      foto : "https://picsum.photos/id/10/600",
+      detalles : " Un zapato ROJO ",
+      tecnologia : "Un Zapato rojo tecnologico"
+    },
     carrito: 0
   },
   mutations: {
