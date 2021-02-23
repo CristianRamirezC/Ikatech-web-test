@@ -1,7 +1,9 @@
 <template>
   <div class="col-12 col-sm-4 col-md-3 col-lg-2 bn-3 mb-3" v-for="zapato of zapatos" :key="zapato.id">
-    <div class="card hover-overlay" @click="mostrar(zapato)">
-      <img :src="zapato.foto" class="card-img-top img-fluid" />
+    <div class="card" @click="mostrar(zapato)">
+        <div>
+            <img :src="zapato.foto" class="card-img-top img-fluid rounded zoom" />   
+        </div>
       <div class="card-body">
         <h5 class="card-title">{{ zapato.nombre }}</h5>
         <p class="card-text">
@@ -10,7 +12,7 @@
       </div>
     </div>
     <div class="text-center">
-        <button class="btn btn-info" @click="aumentarCarrito">Agregar al carrito</button>
+        <button class="btn btn-info zoom" @click="aumentarCarrito">Agregar al carrito</button>
     </div>
     
   </div>
@@ -32,3 +34,18 @@ export default {
   },
 };
 </script>
+
+<style>
+.zoom {
+  padding: 0px;
+  transition: transform .2s; /* Animation */
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
+

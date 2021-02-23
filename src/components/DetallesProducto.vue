@@ -3,10 +3,10 @@
         <div>
             <h1>Detalles de producto</h1>
             <hr>
-            <p> {{zapatoMostrar.detalles}} </p>
+            <p class="fs-3"> {{zapatoMostrar.detalles}} </p>
             <h1>Tecnologia</h1>
             <hr>
-            <p> {{zapatoMostrar.tecnologia}} </p>
+            <p class="fs-3"> {{zapatoMostrar.tecnologia}} </p>
         </div>
     </div>
 </template>
