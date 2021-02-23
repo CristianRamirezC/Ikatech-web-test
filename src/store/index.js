@@ -3,7 +3,8 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
     zapatos: [],
-    zapatoMostrar: {}
+    zapatoMostrar: {},
+    carrito: 0
   },
   mutations: {
     setZapatos(state, listaZapatos) {
@@ -12,6 +13,12 @@ export default createStore({
     },
     setZapatoMostrar(state, zapato){
       state.zapatoMostrar = zapato
+    },
+    setCarrito(state, carrito){
+      state.carrito = carrito
+    },
+    aumentarCarrito(state){
+      state.carrito ++
     }
   },
   actions: {

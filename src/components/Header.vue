@@ -13,22 +13,35 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link ms-4" href="#">DIRECTORIO DE TIENDAS</a>
               <a class="nav-link" href="#">SERVICIO AL CLIENTE</a>
               <a class="nav-link" href="#">MI CUENTA</a>
+              <a class="nav-link" href="#">Carrito: {{carrito}} </a>
             </div>
           </div>
         </div>
       </nav>
     </div>
-        
+
 
   </div>
 </template>
 
 
 <script>
-export default {};
+
+import { computed } from 'vue'
+import {useStore} from 'vuex'
+
+export default {
+    name: 'Header',
+        setup(){
+        const store = useStore()
+        const carrito = computed(() => store.state.carrito)
+        return {carrito}
+        }
+    
+};
 </script>

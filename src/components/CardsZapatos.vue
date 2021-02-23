@@ -9,7 +9,7 @@
         <h5 class="card-title">{{ zapato.nombre }}</h5>
         <p class="card-text">
           $ <span>{{ zapato.precio }}</span>
-          <button class="btn btn-success">Agregar al carrito</button>
+          <button class="btn btn-info" @click="aumentarCarrito">Agregar al carrito</button>
         </p>
       </div>
     </div>
@@ -26,9 +26,9 @@ export default {
   setup() {
     const store = useStore();
     const mostrar = (zapato) => {
-      store.dispatch("mostrarZapato", zapato);
-    };
-    return { mostrar };
+      store.dispatch("mostrarZapato", zapato)}
+    const aumentarCarrito = () => {store.commit('aumentarCarrito')}
+    return { mostrar,aumentarCarrito };
   },
 };
 </script>
