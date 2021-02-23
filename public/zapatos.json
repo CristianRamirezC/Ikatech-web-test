@@ -1,0 +1,43 @@
+[{
+    "nombre": "Zapato azul",
+    "precio": 5000,
+    "referencia": "G40",
+    "foto": "1.jpg",
+    "detalles": "Un Zapato azul",
+    "tecnologia" : "Un Zapato azul tecnologico"
+}, {
+    "nombre": "Zapato rojo",
+    "precio": 5000,
+    "referencia": "G40",
+    "foto": "2.jpg",
+    "detalles": " Un zapato rojo ",
+    "tecnologia" : "Un Zapato rojo tecnologico"
+}, {
+    "nombre": "Zapato verde",
+    "precio": 5000,
+    "referencia": "G40",
+    "foto": "3.jpg",
+    "detalles": " Un zapato verde ",
+    "tecnologia" : "Un Zapato verde tecnologico"
+}, {
+    "nombre": "Zapato gris",
+    "precio": 5000,
+    "referencia": "G40",
+    "foto": "4.jpg",
+    "detalles": " Un zapato gris ",
+    "tecnologia" : "Un Zapato gris tecnologico"
+}, {
+    "nombre": "Zapato cafe",
+    "precio": 5000,
+    "referencia": "G40",
+    "foto": "5.jpg",
+    "detalles": " Un zapato cafe ", 
+    "tecnologia" : "Un Zapato cafe tecnologico"
+}, {
+    "nombre": "Zapato miel",
+    "precio": 5000,
+    "referencia": "G40",
+    "foto": "6.jpg",
+    "detalles": " Un zapato miel ",
+    "tecnologia" : "Un Zapato miel tecnologico"
+}]

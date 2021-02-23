@@ -1,26 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Header/>
+    <MuestraProductoTalla :zapatos="zapatos"></MuestraProductoTalla>
+    <DetallesProducto :zapatos="zapatos"></DetallesProducto>
+    <CompletaLook
+    :zapatos="zapatos"
+    />
+    <ProductosRecomendados :zapatos="zapatos"></ProductosRecomendados>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import {useStore} from 'vuex'
+import { computed, onMounted } from 'vue'
+import Header from './components/Header'
+import MuestraProductoTalla from './components/MuestraProductoTalla.vue'
+import DetallesProducto from './components/DetallesProducto.vue'
+import CompletaLook from './components/CompletaLook'
+import ProductosRecomendados from './components/ProductosRecomendados'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MuestraProductoTalla, DetallesProducto, CompletaLook, ProductosRecomendados, Header
+  },
+  setup(){
+    const store = useStore()
+    onMounted(async() => {
+      store.dispatch('fetchData')
+    })
+
+    const zapatos = computed(() => store.state.zapatos)
+
+    return {zapatos}
   }
+
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
